@@ -1,7 +1,23 @@
 # CurveTracer
-This repository contains applications that helps the user to plot the characteristic curves of diodes and MOSFET transistors using NI myDAQ. Some additional features are built into the applications; curve fitting, extraction of parameters, saturation limits, etc.
+This repository contains applications and scripts that helps the user to plot the characteristic curves of diodes and MOSFET transistors using NI myDAQ. Some additional features are built into the applications; curve fitting, extraction of parameters, saturation limits, etc.
 
 The application has been programmed in two languages: MATLAB and Python.
+
+How to navigate this repository:
+
+- MATLABCurveTracer: this folder contains all the code for the Graphic User Interface (GUI) application designed with App Designer in MATLAB, as well as the different images and data required for the GUI.
+- PythonCurveTracer: this folder contains all the code for the GUI application designed with tkinter in Python, as well as the different images and data required for the GUI.
+- Scripts: this folder contains the code used to obtain the curves of the diode and the MOSFET without a GUI. It is much simpler and direct, it is made just to give the user the curves.
+
+Circuits used:
+
+For the diode, I used a LM741, a 1N4007 diode, cables and resistors (1kOhms and 30kOhms, mainly). The circuit used is the following:
+
+![imagen](https://github.com/user-attachments/assets/05830d7f-5e03-4768-b4b3-468e1fbd3f48)
+
+For the MOSFET, I used a LM741, a MC4007UB MOSFET, cables and resistors (1kOhms and 30kOhms, mainly). The circuit used is the following:
+
+![imagen](https://github.com/user-attachments/assets/7bf3a4fd-c645-47cd-b1c3-40c20e498170)
 
 # MATLAB Curve Tracer
 
