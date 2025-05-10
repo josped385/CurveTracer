@@ -1,7 +1,7 @@
 # CurveTracer
 This repository contains applications that helps the user to plot the characteristic curves of diodes and MOSFET transistors using NI myDAQ. Some additional features are built into the applications; curve fitting, extraction of parameters, saturation limits, etc.
 
-The application has been programmed in tweo languages: MATLAB and Python.
+The application has been programmed in two languages: MATLAB and Python.
 
 # MATLAB Curve Tracer
 
