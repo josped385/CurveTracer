@@ -8,6 +8,10 @@ How to navigate this repository:
 - MATLABCurveTracer: this folder contains all the code for the Graphic User Interface (GUI) application designed with App Designer in MATLAB, as well as the different images and data required for the GUI.
 - PythonCurveTracer: this folder contains all the code for the GUI application designed with tkinter in Python, as well as the different images and data required for the GUI.
 - Scripts: this folder contains the code used to obtain the curves of the diode and the MOSFET without a GUI. It is much simpler and direct, it is made just to give the user the curves.
+- Packed App: this folder contains the packed app (currently only available for MATLAB) so the user doesn't need to use App Designer to access the application; the user only needs to install the app and it will run.
+
+Requirements for Python: the following libraries are needed: nidaqmx, pandas, scipy, matplotlib, numpy, PIL (Pillow), csv (standard library), tkinter (standard library), threading (standard library).
+Requirements for MATLAB: MATLAB (version r2024b or newer, although it might work for other versions), Curve Fitter Toolbox, Data Acquisition Toolbox.
 
 Circuits used:
 
