@@ -17,11 +17,11 @@ Circuits used:
 
 For the diode, I used a LM741, a 1N4007 diode, cables and resistors (1kOhms and 30kOhms, mainly). The circuit used is the following:
 
-![imagen](https://github.com/user-attachments/assets/05830d7f-5e03-4768-b4b3-468e1fbd3f48)
+![DiodeCharacteristicsSchematic](https://github.com/user-attachments/assets/f3c62584-1b16-42fa-b9c6-4cdbbaea4a6a)
 
 For the MOSFET, I used a LM741, a MC4007UB MOSFET, cables and resistors (1kOhms and 30kOhms, mainly). The circuit used is the following:
 
-![imagen](https://github.com/user-attachments/assets/7bf3a4fd-c645-47cd-b1c3-40c20e498170)
+![MOSFETCharacteristicsSchematic](https://github.com/user-attachments/assets/50856fb2-3d96-445f-964b-b67f54908ea5)
 
 # MATLAB Curve Tracer
 
