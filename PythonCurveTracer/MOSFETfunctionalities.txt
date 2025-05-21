@@ -1,0 +1,43 @@
+Panels:
+
+NI myDAQ: In this panel the user can make sure that the myDAQ is connected properly and MATLAB is detecting the hardware. In the case that the device is not connected or not connected properly, an error message will be displayed. The user can also introduce the ID name of the device, so it can be detected properly.
+
+NI myDAQ Ports: In this panel the user can control the channels employed in myDAQ as inputs and outputs to define what ports are used as VD, VG and VO.
+
+Input Signal Properties: In this panel the user can define the characteristics of the signal that will be sent to the circuit connected to the myDAQ, such as:
+- VDmin: minimum value of the VD signal (see Schematic in the help toolbar).
+- VDmax: maximum value of the VD signal.
+- VDsteps: number of divisions in which the vector is going to define the signal sent to the circuit.
+Analogously:
+- VGmin: minimum value of the VG signal.
+- VGmax: maximum value of the VG signal.
+- VGsteps: number of divisions in which the vector is going to define the signal sent to the circuit.
+- Sweep: this checkbox allows the user to plot multiple graphs by creating a sweep. If the X Axis Drop Down is in V_DS, it creates a sweep with VGsteps curves of constant VG. IF V_GS is in the X Axis Drop Down, there will be VDsteps curves with constant VD values.
+NOTE: with Sweep disabled, the program takes the highest value between VDsteps and VGsteps and create the vectors VD and VG with that value, so different sizes are not available.
+
+Measurement Status: In this panel the user can control the simulation proceeding. Functionalities available in this panel:
+- Run measurement: with this button the user can start the simulation.
+- Stop simulation: with this buttton the user can stop the simulation at any moment.
+- Measurement Status (%): in this gauge, the user can see the percentage that represents how much is left to complete the simulation (only available for the Slow Mode (the Fast Mode is not selected)).
+
+Measurement Properties: In this panel the user can modify some parameters relevant to the simulation and circuit:
+- R: in this field the user can modify the value of the resistor employed in the circuit.
+- NAveraging: in this field the user can define the number of simulations that can be done before averaging and representing the averaged result.
+- IOff: in this field the user can make a correction about the offset current. The value inserted in this field will be sustracted from every point in the I-V curve.
+
+Measurement Options: In this panel the user can modify some aspects relevant to the simulation that is going to be done.
+- Show Sat Limits: when pressed, this button shows in both graphs the saturation limits of current and voltage of the circuit. The user can press this button again, when it says 'Hide Sat Limits', to hide the saturation limits.
+- Curve fitting: this button gives access to the user to a panel in which the user can model the last curve represented as an exponential function, and the parameters and the errors are given. It also displays the correlation factor of the adjustment, so the user can have an idea of how good the curve fitting is. In the graphs, a function with the parameters calculated is represented, with names Ifit and Vfit, so the user can have a visual idea of the calculation realised by the curve fitting button.
+    - In the curve fitting panel, you can fit the curves I-V and V-V and obtain the fitting parameters and the residues. You can export the parameters and save the plots using the menu above the panel.
+- Full Scale Range: it shows the Full Scale Range (FSR) of the measurement.
+- Extra Parameters:In this panel the user can obtain extra parameters for ohmic and saturation regions, as well as strong inversion regions using level 3 model of the transistor. The parameters that can be obtained for the ohmic and saturation regions are UO, THETA and VTO, defined in another panel of the Help App. The errors of the fit and the correlation coefficients of the adjustment are also displayed. For the strong inversion parameters, we don't have errors or correlation coefficients. The coefficients are GAMMA, KAPPA, PHI and THETA2 (also shown in this Help App). The substrate effect can be specified to obtain the corresponding coefficients.
+
+In the menu above the GUI, you can interact with the plots and the data used:
+
+- Rename: the user can rename any curve represented, so the graph can be better studied and understood by the user.
+- Save as: the user can use this option to same the image obtained in the graph, in various formats.
+- Export Data to Workspace: the user can export the data of the curves to the Workspace of MATLAB, so further analysis can be performed. The data is exported with the name of the curve, in a table with two columns, the first one are the x-values, and the second are the y-values.
+- Load data: with this option, the user can load data into the graph, so comparisons and further analysis can be made.
+- Hide Graph: with this option, the user can hide the graph selected.
+- Show Graph: if the user hid a graph with the previous options, the user can show again that graph with this one.
+- Save config: you can export to .csv the parameters VDmin, VDmax, R, etc.
