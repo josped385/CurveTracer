@@ -86,13 +86,13 @@ Curve fitting:
 
 ![imagen](https://github.com/user-attachments/assets/4a2c3b29-cf55-404a-ac4b-ea358ad427d9)
 
-Extra Parameters: degradation of mobility (when V_DS is in the X Axis):
+Extra Parameters: degradation of mobility (when V_GS is in the X Axis):
 
 ![imagen](https://github.com/user-attachments/assets/d34533a3-9606-4653-80c3-dd3190ce54b7)
 
-Extra Parameters: strong inversion parameters (when V_GS is in the X Axis):
+Extra Parameters: strong inversion parameters (when V_DS is in the X Axis):
 
-![imagen](https://github.com/user-attachments/assets/324b7c7f-3b2d-4d10-9bfa-3b84bb78d96e)
+![imagen](https://github.com/user-attachments/assets/b0304069-7808-4269-be1f-1a493a568e83)
 
 The functionalities of this app is similar to that of the diode; therefore, we only add the functionalities of the Extra Parameters window:
 
